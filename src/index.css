@@ -1,38 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-
-h1{
-  color: rgb(241, 207, 163);
-  font-family: Mingzat;
-  font-size: 4em;
+h1 {
+	color: rgb(241, 207, 163);
+	font-family: Mingzat;
+	font-size: 4em;
 }
 
-p{
-  color: rgb(241, 207, 163);
-  font-size: 2em;
-  font-family: mingzat;
+p {
+	color: rgb(241, 207, 163);
+	font-size: 2em;
+	font-family: mingzat;
 }
 
-.app{
-  background-color: rgba(0,0,0, 0.4);
-  width: 100%;
-  height: 100vh;
-  position: relative;
+.app {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100vh;
+	position: relative;
 }
 
-.app::before{
-  content: '';
-  background: url(./assets/background.jpg) no-repeat center center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index:  -1;
+.app::before {
+	content: '';
+	background: url(./assets/background.jpg) no-repeat center center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.app .search{
+  text-align: center;
+  padding: 1rem;
+}
+
+input{
+  padding: .7rem 1,5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgba(0,0,0,0.4);
+}
+.app .container {
+	display: flex;
+	max-width: 700px;
+	height: 700px;
+	margin: auto;
+	padding: 0 1rem;
+	top: 10%;
+	position: relative;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.app .top {
+	width: 100%;
+	margin: 1rem auto;
+}
+
+.app .description {
+	position: relative;
+	right: -80%;
+	transform-origin: 0 0;
+	transform: rotate(269deg);
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	width: 20%;
+	height: 10%;
+	margin: 2rem 3rem 1rem auto;
+	padding: 1rem;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.4);
 }
